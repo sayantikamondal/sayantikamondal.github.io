@@ -64,27 +64,50 @@
 										<p>More coming soon. Meanwhile, stalk me on <a href= "https://www.instagram.com/sayantika_mondal/"> insta </a> if you are interested in my personal life.</p>
 
 									<h3 class="major">Random doodles</h3>
-									I like doodling places I visit, mostly for conferences. Here's some of them.
+									I like doodling places I visit, mostly for conferences. Here's some of them. Click to enlarge.
 
-									<div class="row">
-  <div class="column">
-    <img src="">
-   
-    
-  </div>
-  <div class="column">
-   
-    
-  </div>
-  <div class="column">
-    <img src="">
-   
-  </div>
-  <div class="column">
-    <img src="">
-    
-  </div>
-</div>
+									<style>
+									.art-gallery {
+										display: grid;
+										grid-template-columns: repeat(4, 1fr);
+										grid-auto-rows: 180px;
+										gap: 6px;
+										grid-auto-flow: dense;
+										margin: 1.5em 0 2em;
+									}
+									.art-gallery a {
+										display: block;
+										overflow: hidden;
+										border-radius: 4px;
+									}
+									.art-gallery img {
+										width: 100%;
+										height: 100%;
+										object-fit: cover;
+										transition: transform 0.35s ease, opacity 0.3s ease;
+									}
+									.art-gallery a:hover img {
+										transform: scale(1.06);
+										opacity: 0.85;
+									}
+									.g-lg { grid-column: span 2; grid-row: span 2; }
+									.g-w  { grid-column: span 2; }
+									.g-t  { grid-row: span 2; }
+									@media (max-width: 736px) {
+										.art-gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 130px; }
+									}
+									</style>
+
+									<div class="art-gallery">
+										<a href="images/pic01.jpg" target="_blank" class="g-lg"><img src="images/pic01.jpg" alt="" loading="lazy"></a>
+										<a href="images/pic02.jpg" target="_blank" class="g-t"><img src="images/pic02.jpg" alt="" loading="lazy"></a>
+										<a href="images/pic03.jpg" target="_blank"><img src="images/pic03.jpg" alt="" loading="lazy"></a>
+										<a href="images/pic04.jpg" target="_blank" class="g-w"><img src="images/pic04.jpg" alt="" loading="lazy"></a>
+										<a href="images/pic05.jpg" target="_blank"><img src="images/pic05.jpg" alt="" loading="lazy"></a>
+										<a href="images/pic06.jpg" target="_blank" class="g-lg"><img src="images/pic06.jpg" alt="" loading="lazy"></a>
+										<a href="images/pic07.jpg" target="_blank" class="g-t"><img src="images/pic07.jpg" alt="" loading="lazy"></a>
+										<a href="images/pic08.jpg" target="_blank" class="g-w"><img src="images/pic08.jpg" alt="" loading="lazy"></a>
+									</div>
 
 									<!--<h3 class="major">Project 1</h3>
 									<p>Project description.</p>-->
